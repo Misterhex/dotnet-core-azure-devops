@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: misterhexdotnetcoreazuredevops 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: misterhexdotnetcoreazuredevops 
+    spec:
+      containers:
+        - name: misterhexdotnetcoreazuredevops 
+          image: misterhex.azurecr.io/misterhexdotnetcoreazuredevops 
+          ports:
+          - containerPort: 80
